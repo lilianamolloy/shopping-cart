@@ -1,4 +1,8 @@
 .product-page {
+  &__notice{
+    color: lightcoral;
+  }
+
   &__header {
     display: flex;
     justify-content: space-between;

@@ -1,4 +1,8 @@
 <div class="product-page">
+  <div class="product-page__notice">
+    <%= flash[:notice] %>
+  </div>
+
   <div class="product-page__header">
     <h1><%= t("product.index.title") %></h1>
     <%= link_to t("product.index.view_cart"), cart_path %>

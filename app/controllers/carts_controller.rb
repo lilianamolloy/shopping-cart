@@ -4,11 +4,16 @@ class CartsController < ApplicationController
   end
 
   def update
-    if cart.nil?
-      session[:cart] = [product_id]
+    session[:cart] = [] unless cart.any?
+
+    if cart.include?(product_id)
+      flash[:notice] = I18n.t("cart.update.error")
     else
-      cart.push(product_id) unless cart.include?(product_id)
+      cart.push(product_id)
+      flash[:notice] = I18n.t("cart.update.successful")
     end
+
+    redirect_to root_path
   end
 
   def destroy

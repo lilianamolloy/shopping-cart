@@ -39,6 +39,9 @@ en:
       add_to_cart: Add to Cart
       remove: Remove from Cart
   cart:
+    update:
+      successful: Successfully added to cart
+      error: Item already in your cart
     show:
       title: Your Cart
       total: "Total before discount: %{total}"
