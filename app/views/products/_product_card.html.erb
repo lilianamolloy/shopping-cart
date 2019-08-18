@@ -4,7 +4,8 @@
     <p><%= @view.price(product.price) %></p>
   </div>
 
-  <button>
-    <%= t("product.card.button") %>
-  </button>
+  <%= button_to t("product.card.button"),
+    cart_path(product_id: product.id),
+    method: "patch"
+  %>
 </div>
