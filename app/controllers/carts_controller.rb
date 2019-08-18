@@ -4,7 +4,6 @@ class CartsController < ApplicationController
   end
 
   def update
-    raise
     cart = session[:cart]
 
     if cart.nil?

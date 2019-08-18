@@ -1,0 +1,20 @@
+<div class="cart-page">
+  <div class="cart-page__header">
+    <h1><%= t("cart.show.title") %></h1>
+    <%= link_to t("cart.show.back"), root_path %>
+  </div>
+
+  <div class="cart-page__body">
+    <div class="cart-page__body--product-cards">
+      <%= render partial: "./shared/product_card",
+        collection: @view.products,
+        locals: { product_page: false },
+        as: "product" || t("cart.show.empty")
+      %>
+    </div>
+
+    <div class="cart-page__body--total-price">
+      <p><%= t("cart.show.total", total: price_formatter(@view.total)) %></p>
+    </div>
+  </div>
+</div>

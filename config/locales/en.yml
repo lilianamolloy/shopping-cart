@@ -37,3 +37,9 @@ en:
       view_cart: View Cart
     card:
       button: Add to Cart
+  cart:
+    show:
+      title: Your Cart
+      total: "Current Total: %{total}"
+      empty: There are currently no items in your cart
+      back: Back to Shop

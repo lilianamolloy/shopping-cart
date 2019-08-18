@@ -1,7 +1,7 @@
 <div class="product-card">
   <div class="product-card__details">
     <p><%= product.name %></p>
-    <p><%= @view.price(product.price) %></p>
+    <p><%= price_formatter(product.price) %></p>
   </div>
 
   <%= button_to t("product.card.button"),
