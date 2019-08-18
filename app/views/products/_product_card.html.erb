@@ -1,0 +1,10 @@
+<div class="product-card">
+  <div class="product-card__details">
+    <p><%= product.name %></p>
+    <p><%= @view.price(product.price) %></p>
+  </div>
+
+  <button>
+    <%= t("product.card.button") %>
+  </button>
+</div>

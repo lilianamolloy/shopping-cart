@@ -1,0 +1,11 @@
+<div class="product-page">
+  <div class="product-page__header">
+    <h1><%= t("product.index.title") %></h1>
+    <%= t("product.index.view_cart") %>
+  </div>
+
+  <%= render partial: "product_card",
+    collection: @view.products,
+    as: "product"
+  %>
+</div>

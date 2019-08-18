@@ -30,4 +30,10 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  product:
+    index:
+      title: Welcome to the shop
+      empty: There are no current items
+      view_cart: View Cart
+    card:
+      button: Add to Cart
