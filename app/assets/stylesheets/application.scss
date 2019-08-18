@@ -17,6 +17,14 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 
+:root {
+  --blue: #add8e6;
+  --coral: #f08080;
+  --black: #000000;
+  --grey: #e4e4e4;
+}
+
+
 .application-body {
   margin: 30px auto 0px auto;
   width: 60%;
@@ -32,15 +40,16 @@ input {
   border-radius: 4px;
 
   &:hover {
-    background: lightblue;
+    opacity: 0.8;
+    cursor: pointer;
   }
 }
 
 a {
   text-decoration: none;
-  color: black;
+  color: var(--black);
 
   &:hover {
-    color: lightblue;
+    color: var(--blue);
   }
 }

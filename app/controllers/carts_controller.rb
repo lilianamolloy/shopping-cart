@@ -18,6 +18,7 @@ class CartsController < ApplicationController
 
   def destroy
     cart.delete_if { |id| id == product_id }
+
     redirect_to cart_path
   end
 
