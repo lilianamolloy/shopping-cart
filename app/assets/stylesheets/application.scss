@@ -13,3 +13,30 @@
  *= require_tree .
  *= require_self
  */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+.application-body {
+  margin: 30px auto 0px auto;
+  width: 50%;
+  font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+  font-family: 'Montserrat';
+}
+
+button {
+  padding: 10px;
+  border-radius: 4px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+
+  &:hover {
+    color: lightblue;
+  }
+}
