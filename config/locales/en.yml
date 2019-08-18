@@ -36,7 +36,8 @@ en:
       empty: There are no current items
       view_cart: View Cart
     card:
-      button: Add to Cart
+      add_to_cart: Add to Cart
+      remove: Remove from Cart
   cart:
     show:
       title: Your Cart

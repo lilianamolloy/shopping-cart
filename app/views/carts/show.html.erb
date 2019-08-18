@@ -6,11 +6,15 @@
 
   <div class="cart-page__body">
     <div class="cart-page__body--product-cards">
-      <%= render partial: "./shared/product_card",
-        collection: @view.products,
-        locals: { product_page: false },
-        as: "product" || t("cart.show.empty")
-      %>
+      <% if @view.products.any? %>
+        <%= render partial: "./shared/product_card",
+          collection: @view.products,
+          locals: { product_page: false },
+          as: "product" || t("cart.show.empty")
+        %>
+      <% else %>
+        <h3><%= t("cart.show.empty") %></h3>
+      <% end %>
     </div>
 
     <div class="cart-page__body--total-price">

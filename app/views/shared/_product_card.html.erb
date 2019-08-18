@@ -5,9 +5,14 @@
   </div>
 
   <% if product_page %>
-    <%= button_to t("product.card.button"),
+    <%= button_to t("product.card.add_to_cart"),
       cart_path(product_id: product.id),
       method: "patch"
+    %>
+  <% else %>
+    <%= button_to t("product.card.remove"),
+      cart_path(product_id: product.id),
+      method: "delete"
     %>
   <% end %>
 </div>

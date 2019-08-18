@@ -35,7 +35,7 @@ class CartView
         discounted_amount: calculate_discount(total, 10)
       ).html_safe
     else
-      I18n.t("cart.show.discount",
+      I18n.t("cart.show.no_discount",
         total: number_to_currency(total / 100.0)
       ).html_safe
     end
