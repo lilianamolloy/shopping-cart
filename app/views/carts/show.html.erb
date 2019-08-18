@@ -14,7 +14,9 @@
     </div>
 
     <div class="cart-page__body--total-price">
+      <h3><%= t("cart.show.cart_total") %></h3>
       <p><%= t("cart.show.total", total: price_formatter(@view.total)) %></p>
+      <%= @view.discounted_price %>
     </div>
   </div>
 </div>

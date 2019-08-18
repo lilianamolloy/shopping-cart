@@ -4,8 +4,10 @@
     <p><%= price_formatter(product.price) %></p>
   </div>
 
-  <%= button_to t("product.card.button"),
-    cart_path(product_id: product.id),
-    method: "patch"
-  %>
+  <% if product_page %>
+    <%= button_to t("product.card.button"),
+      cart_path(product_id: product.id),
+      method: "patch"
+    %>
+  <% end %>
 </div>

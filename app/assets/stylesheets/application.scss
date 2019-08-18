@@ -19,7 +19,7 @@
 
 .application-body {
   margin: 30px auto 0px auto;
-  width: 50%;
+  width: 60%;
   font-family: 'Quicksand', sans-serif;
 }
 
@@ -27,9 +27,13 @@ h1 {
   font-family: 'Montserrat';
 }
 
-button {
+input {
   padding: 10px;
   border-radius: 4px;
+
+  &:hover {
+    background: lightblue;
+  }
 }
 
 a {

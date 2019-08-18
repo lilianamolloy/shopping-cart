@@ -40,6 +40,9 @@ en:
   cart:
     show:
       title: Your Cart
-      total: "Current Total: %{total}"
+      total: "Total before discount: %{total}"
       empty: There are currently no items in your cart
       back: Back to Shop
+      cart_total: Cart Total
+      discount: "<p>Discount applied: %{discount}% off on total greater than $%{min_spend}</p><b>Total after Discount: %{discounted_amount}</b>"
+      no_discount: "<p>No discount available</p><b>Total: %{total}</b>"
